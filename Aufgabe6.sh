@@ -18,7 +18,9 @@ checkVolume(){
   fi
 }
 
-while [ true ]
-do
-  checkVolume
-done
+if [ "$1" != "test" ]; then
+  while [ true ]
+  do
+    checkVolume
+  done
+fi
